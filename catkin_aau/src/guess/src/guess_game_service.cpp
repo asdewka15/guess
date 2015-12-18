@@ -11,18 +11,16 @@ bool check(guess::IsItCorrect::Request  &req,
   if(req.guessedNumber > secretNumber)
   {
     res.correct = "higher";    
-    ROS_INFO_STREAM("sending back: " << res.correct);
   }
   else if(req.guessedNumber < secretNumber)
   {
     res.correct = "lower";
-    ROS_INFO_STREAM("sending back: " << res.correct);
   }
   else
   {
     res.correct = "correct";
-    ROS_INFO_STREAM("sending back: " << res.correct);
   }
+  ROS_INFO_STREAM("sending back: " << res.correct);
 
   return true;
 }
