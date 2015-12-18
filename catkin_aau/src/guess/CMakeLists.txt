@@ -6,7 +6,6 @@ project(guess)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
 				roscpp
-				std_msgs
 				message_generation)
 
 ## System dependencies are found with CMake's conventions
